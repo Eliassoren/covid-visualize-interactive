@@ -35,7 +35,7 @@ export const getOptions = (countries, minCases) => {
                             .filter(c => 
                                 c.cases > minCases
                             )
-                            .sort((a, b) => a.y - b.y)
+                            .sort((a, b) =>  b.cases - a.cases)
                             .map(c => {
                                 return {
                                     y: Number(c.cases), label: c.country

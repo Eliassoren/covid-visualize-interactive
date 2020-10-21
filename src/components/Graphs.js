@@ -4,8 +4,6 @@ import { CountriesContainer } from "./CountriesContainer";
 
 
 
-
-
 export const Graphs = () => {
 
     return (

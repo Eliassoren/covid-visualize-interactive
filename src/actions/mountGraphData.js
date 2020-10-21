@@ -32,9 +32,7 @@ export const getOptions = (countries, minCases) => {
             type: "bar",
             dataPoints: countries &&
                             countries
-                            .filter(c => 
-                                c.cases > minCases
-                            )
+                            .filter(c => c.cases > minCases)
                             .sort((a, b) =>  b.cases - a.cases)
                             .map(c => {
                                 return {
